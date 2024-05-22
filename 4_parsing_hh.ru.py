@@ -17,7 +17,7 @@ for vacancy in vacancies:
         title = vacancy.find_element(By.CSS_SELECTOR, 'span.vacancy-name--SYbxrgpHgHedVTkgI_cA').text
         company = vacancy.find_element(By.CSS_SELECTOR, 'span.company-info-text--O32pGCRW0YDmp3BHuNOP').text
         salary = vacancy.find_element(By.CSS_SELECTOR, 'span.compensation-text--cCPBXayRjn5GuLFWhGTJ').text
-        link = vacancy.find_element(By.CSS_SELECTOR, 'a.bloko-link').get_attrubute('href')
+        link = vacancy.find_element(By.CSS_SELECTOR, 'a.bloko-link').get_attribute('href')
     except:
         print("произошла ошибка при парсинге")
         continue
